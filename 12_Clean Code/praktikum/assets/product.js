@@ -99,10 +99,13 @@ let deleteButton = document.getElementById("delete-button");
 deleteButton.addEventListener("click", function (event) {
     event.preventDefault();
 
+    
     const tableBody = document.getElementById("table-body");
     let lastRow = tableBody.lastElementChild;
     tableBody.removeChild(lastRow);
-    noUrut--;
+    if (noUrut != 1) {
+        noUrut--;
+    }
 });
 
 // membuat fungsi searching untuk mencari data di table
