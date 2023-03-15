@@ -36,6 +36,7 @@
    - Function component
 
    - Deklarasi variable state
+
      o Apa yang terjadi Ketika memanggil useState
      o Apa yang diberikan ke useSate sebagai argument
      o Apa yang dikembalikan useSate
