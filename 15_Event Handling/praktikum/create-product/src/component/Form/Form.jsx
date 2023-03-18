@@ -54,7 +54,7 @@ function Form() {
                 name="productName"
                 value={productName}
                 onChange={handleProductNameChange}
-                required=""
+                required
                 />
                 </div>
                 <div className="col-4" />
@@ -69,7 +69,7 @@ function Form() {
                     id="productcategory"
                     aria-label="Default 
                             select example"
-                    required=""
+                    required
                 >
                     <option selected="" disabled="" value="">
                     Choose..
@@ -94,7 +94,7 @@ function Form() {
                     id="image-product"
                     height="32px"
                     width="200px"
-                    required=""
+                    required
                 />
                 </div>
                 <div className="col-4" />
@@ -110,7 +110,7 @@ function Form() {
                     type="radio"
                     name="radioproduct"
                     defaultValue="Brand New"
-                    required=""
+                    required
                     />
                     <label className="form-check-label" htmlFor="flexRadioDefault1">
                     Brand New
@@ -122,7 +122,7 @@ function Form() {
                     type="radio"
                     name="radioproduct"
                     defaultValue="Second Hand"
-                    required=""
+                    required
                     />
                     <label className="form-check-label" htmlFor="flexRadioDefault2">
                     Second Hand
@@ -137,7 +137,7 @@ function Form() {
                     type="radio"
                     name="radioproduct"
                     defaultValue="Refurbished"
-                    required=""
+                    required
                     />
                     <label className="form-check-label" htmlFor="flexRadioDefault3">
                     Refurbished
@@ -156,7 +156,7 @@ function Form() {
                     placeholder="Leave a comment here"
                     id="description"
                     style={{ height: 100 }}
-                    required=""
+                    required
                     defaultValue={""}
                     />
                     <label htmlFor="floatingTextarea2" />
@@ -174,7 +174,7 @@ function Form() {
                     id="productprice"
                     aria-describedby="textHelp"
                     placeholder="$ 1"
-                    required=""
+                    required
                 />
                 </div>
                 <div className="col-4" />
