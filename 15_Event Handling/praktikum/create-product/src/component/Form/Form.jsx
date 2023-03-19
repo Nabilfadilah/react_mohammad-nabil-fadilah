@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 
 function Form() {
+    /**
+     * Object article ini seharusnya ada di file terpisah, dengan menggunakan syntax export, "article" bisa digunakan di manapun.
+     */
     const article = {
         title: {
             id: "Buat Akun",
