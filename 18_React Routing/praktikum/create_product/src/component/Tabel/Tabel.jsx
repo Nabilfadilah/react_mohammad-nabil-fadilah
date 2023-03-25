@@ -1,23 +1,9 @@
-import React from 'react'
-// import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Tabel({productData, handleDelete, handleEdit}) {
-    // const {id, name, category, price} = props.data;
-    // const history = useNavigate();
-    // const action = () => {
-    //     history.push(
-    //         {
-    //             pathname: '/account/${id}',
-    //             state: {
-    //                 data : props.data
-    //             }
-    //         }
-    //     )
-    // }
+function Table({productData, handleDelete, handleEdit}) {
     return (
-        <div>
-            <hr />
-            <h2 className="judul text-center mt-3">List Product</h2>
+            <div>
             <table className="table table-striped mt-3" id="table">
                 <thead>
                 <tr>
@@ -32,7 +18,11 @@ function Tabel({productData, handleDelete, handleEdit}) {
                 <tbody id="table-body">
                 {productData.map((product, index) => (
                     <tr key={product.id}>
-                    <td>{1000 + index + 1}</td>
+                    <td>
+                        <Link to={`/account/${product.id}`} state={product}>
+                        {product.id}
+                        </Link>
+                    </td>
                     <td>{product.name}</td>
                     <td>{product.category}</td>
                     <td>{product.freshness}</td>
@@ -45,8 +35,9 @@ function Tabel({productData, handleDelete, handleEdit}) {
                 ))}
                 </tbody>
             </table>
-        </div>
-    )
-}
+            </div>
 
-export default Tabel
+        )
+    }
+
+export default Table

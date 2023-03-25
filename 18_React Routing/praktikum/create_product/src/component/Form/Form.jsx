@@ -63,7 +63,7 @@ function Form() {
             <section>
             <form onSubmit={handleProductSubmit} name="form">
                 <div className="container text-center">
-                    
+                {/* <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Logo Bootstrap" width="72px"/> */}
                     <h2 className="mt-5 ">{article.title.en}</h2>
                 </div>
                 <div className="row">
