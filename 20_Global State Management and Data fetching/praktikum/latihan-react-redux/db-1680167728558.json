@@ -1,0 +1,19 @@
+{
+  "Kontak": [
+    {
+      "id": 1,
+      "nama": "Sugeng Rahayu",
+      "noHp": "092382983293"
+    },
+    {
+      "id": 2,
+      "nama": "Primajasa",
+      "noHp": "09243483293"
+    },
+    {
+      "id": 3,
+      "nama": "Pahala Kencana",
+      "noHp": "0974333200"
+    }
+  ]
+}
