@@ -34,7 +34,7 @@ function App() {
 
           <Route path="/loadmore" element={<LoadMore />} />
 
-          <Route path="/account/:id" element={<DataProduct />} />
+          {/* <Route path="/account/:id" element={<DataProduct />} /> */}
 
           {/* <Route
             path="/account/:id"

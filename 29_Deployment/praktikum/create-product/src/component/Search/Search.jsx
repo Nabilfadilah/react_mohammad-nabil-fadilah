@@ -7,6 +7,7 @@ import { useFormik } from "formik";
 
 function Search() {
   const params = useParams();
+
   const SEARCH_PRODUCT = gql`
     query SearchProduct($_ilike: String!) {
       product(where: { productName: { _ilike: $_ilike } }) {
