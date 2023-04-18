@@ -1,4 +1,4 @@
-                                        (27) GrapgQL Query and Mutation
+                                        (27) GraphQL Query and Mutation
 
 ## 1. Query
 
@@ -20,12 +20,12 @@ Refetching merupakan proses pengambilan ulang yang memungkinkan dalam menyegarka
 
 ### Mutation with Apollo Client
 
-1. Import useMutation hooks dari apollo client dan definisikan.
+    1. Import useMutation hooks dari apollo client dan definisikan.
 
 ### Mutation Insert Data with Apollo Client
 
-2. Aktifkan useMutation dan gunakan array destruction define mutation handler (insert).
-3. Panggil fungsi insert dengan sebuah variabel.
+    2. Aktifkan useMutation dan gunakan array destruction define mutation handler (insert).
+    3. Panggil fungsi insert dengan sebuah variabel.
 
 ### Mutation Update Data with Apollo Client
 
