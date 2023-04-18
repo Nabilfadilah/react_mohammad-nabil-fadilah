@@ -29,9 +29,9 @@ Refetching merupakan proses pengambilan ulang yang memungkinkan dalam menyegarka
 
 ### Mutation Update Data with Apollo Client
 
-- Definisikan update Query
-- Buatlah mutation handler untuk mengupdate
-- Panggil fungsi update Query.
+    - Definisikan update Query
+    - Buatlah mutation handler untuk mengupdate
+    - Panggil fungsi update Query.
 
 ### Mutation Delete Data with Apollo Client
 
