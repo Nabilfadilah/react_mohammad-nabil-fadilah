@@ -1,40 +1,42 @@
                                         (27) GraphQL Query and Mutation
 
-## 1. Query
+1. Query
 
-### Query with Apollo Client
+   Query with Apollo Client
 
-    1. Import gql dan useQuery atau anda bisa langsung menyalin dari hasura.
-    2. Memanggil useQuery dengan tujuan mendapatkan data awal
-    3. Melakukan komsumsi data yang terdapat pada kode jsx, pastikan bahwa pada permintaan pertama data adalah nol sehingga perlu menggunakan rangkaian opsional untuk menghindari kesalahan.
+   1. Import gql dan useQuery atau anda bisa langsung menyalin dari hasura.
+   2. Memanggil useQuery dengan tujuan mendapatkan data awal
+   3. Melakukan komsumsi data yang terdapat pada kode jsx, pastikan bahwa pada permintaan pertama data adalah nol sehingga perlu menggunakan rangkaian opsional untuk menghindari kesalahan.
 
-### Query with Apollo Client - lazy query
+   - Query with Apollo Client - lazy query
 
-useLazyQuery sangat cocok untuk mengeksekusi Query sebagai respons selain rendering komponen. Berbeda dengan useQuery, pemanggilan useLazyQuery, tidak akan segera mengeksekusi Query yang terkait.
+   useLazyQuery sangat cocok untuk mengeksekusi Query sebagai respons selain rendering komponen. Berbeda dengan useQuery, pemanggilan useLazyQuery, tidak akan segera mengeksekusi Query yang terkait.
 
-### Query with Apollo Client - refetching
+   - Query with Apollo Client - refetching
 
-Refetching merupakan proses pengambilan ulang yang memungkinkan dalam menyegarkan hasil Query sebagai respons terhadap tindakan seorang pengguna. Refetching tidak menggunakan interval tetap. Cara kerjanya adalah secara opsional yaitu dengan memberikan objek variabel baru ke fungsi refetch. Jika tidak, Query akan secara otomatis menggunakan variabel yang sama dengan yang digunakan dalam eksekusi sebelumnya
+   Refetching merupakan proses pengambilan ulang yang memungkinkan dalam menyegarkan hasil Query sebagai respons terhadap tindakan seorang pengguna. Refetching tidak menggunakan interval tetap. Cara kerjanya adalah secara opsional yaitu dengan memberikan objek variabel baru ke fungsi refetch. Jika tidak, Query akan secara otomatis menggunakan variabel yang sama dengan yang digunakan dalam eksekusi sebelumnya
 
-## 2. Mutation
+---
 
-### Mutation with Apollo Client
+2. Mutation
 
-    1. Import useMutation hooks dari apollo client dan definisikan.
+   - Mutation with Apollo Client
 
-### Mutation Insert Data with Apollo Client
+   1. Import useMutation hooks dari apollo client dan definisikan.
 
-    2. Aktifkan useMutation dan gunakan array destruction define mutation handler (insert).
-    3. Panggil fungsi insert dengan sebuah variabel.
+   Mutation Insert Data with Apollo Client
 
-### Mutation Update Data with Apollo Client
+   2. Aktifkan useMutation dan gunakan array destruction define mutation handler (insert).
+   3. Panggil fungsi insert dengan sebuah variabel.
 
-    - Definisikan update Query
-    - Buatlah mutation handler untuk mengupdate
-    - Panggil fungsi update Query.
+   Mutation Update Data with Apollo Client
 
-### Mutation Delete Data with Apollo Client
+   1. Definisikan update Query
+   2. Buatlah mutation handler untuk mengupdate
+   3. Panggil fungsi update Query.
 
-- Definisikan delete Query.
-- Buatlah mutation handler untuk delete
-- Panggil fungsi delete Query.
+   Mutation Delete Data with Apollo Client
+
+   - Definisikan delete Query.
+   - Buatlah mutation handler untuk delete
+   - Panggil fungsi delete Query.
