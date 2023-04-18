@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 describe("Form", () => {
 
     // buat mengecek inputan di dalam input name
-    it("should render product name input and display entered text", () => {
+    test("should render product name input and display entered text", () => {
         render(
         <Router>
             <Provider store={store}>
@@ -26,7 +26,7 @@ describe("Form", () => {
     })
 
     // untuk mengecek value catergory
-    it("should render form and display selected option", () => {
+    test("should render form and display selected option", () => {
         render(
         <Router>
             <Provider store={store}>
@@ -44,7 +44,7 @@ describe("Form", () => {
     });
 
     // untuk mengecek error ketika product name kosong
-    it("should show error message when Product Name is empty", async () => {
+    test("should show error message when Product Name is empty", async () => {
     render(
         <Router>
         <Provider store={store}>
@@ -60,7 +60,7 @@ describe("Form", () => {
     });
 
     // untuk mengecek carakter
-    it("should show error message when Product Name contains invalid characters", async () => {
+    test("should show error message when Product Name contains invalid characters", async () => {
     render(
         <Router>
         <Provider store={store}>
@@ -80,7 +80,7 @@ describe("Form", () => {
     });
 
     // unutk mengecek maksimal karater
-    it("Maksimal 25 karakter", async () => {
+    test("Maksimal 25 karakter", async () => {
     render(
         <Router>
         <Provider store={store}>
@@ -100,7 +100,7 @@ describe("Form", () => {
     });
 
     // untuk mengecek semua message inputan 
-    it("should show error messages when all form fields are empty", async () => {
+    test("should show error messages when all form fields are empty", async () => {
     render(
         <Router>
         <Provider store={store}>
